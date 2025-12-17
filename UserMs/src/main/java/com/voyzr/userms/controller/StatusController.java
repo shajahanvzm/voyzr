@@ -1,14 +1,12 @@
-package com.voyzr.tripms.controller;
+package com.voyzr.userms.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import lombok.extern.slf4j.Slf4j;
 
 @RestController
 @RequestMapping
-@Slf4j
 public class StatusController {
 
     @Value("${spring.application.name}")
@@ -17,9 +15,6 @@ public class StatusController {
 
     @GetMapping
     public String status() {
-        log.info("Health check requested for {}", appName);
-        String msg = appName + " is UP!";
-        log.debug("Health check response: {}", msg);
-        return msg;
+        return appName + " is UP!";
     }
 }

@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.voyzr</groupId>
-    <artifactId>ApiGateway</artifactId>
+    <artifactId>apigateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ApiGateway</name>
     <description>ApiGateway</description>
